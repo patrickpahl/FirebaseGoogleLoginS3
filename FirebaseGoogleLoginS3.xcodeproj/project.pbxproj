@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BDC060F55E899A4385DAECE /* Pods_FirebaseGoogleLoginS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D9C60B9A95B32C1618DE87 /* Pods_FirebaseGoogleLoginS3.framework */; };
 		79452B131DBC1467003EEDC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79452B121DBC1467003EEDC5 /* AppDelegate.swift */; };
 		79452B151DBC1467003EEDC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79452B141DBC1467003EEDC5 /* ViewController.swift */; };
 		79452B181DBC1467003EEDC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79452B161DBC1467003EEDC5 /* Main.storyboard */; };
 		79452B1A1DBC1467003EEDC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79452B191DBC1467003EEDC5 /* Assets.xcassets */; };
 		79452B1D1DBC1467003EEDC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79452B1B1DBC1467003EEDC5 /* LaunchScreen.storyboard */; };
 		79452B281DBC1467003EEDC5 /* FirebaseGoogleLoginS3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79452B271DBC1467003EEDC5 /* FirebaseGoogleLoginS3Tests.swift */; };
+		79452B331DBC1544003EEDC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79452B321DBC1544003EEDC5 /* GoogleService-Info.plist */; };
+		BB5B2ADEF9555A2E9AB2F788 /* Pods_FirebaseGoogleLoginS3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A247851C93793B8D5D747E /* Pods_FirebaseGoogleLoginS3Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25A247851C93793B8D5D747E /* Pods_FirebaseGoogleLoginS3Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseGoogleLoginS3Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		569AD441D665B73EDA32431E /* Pods-FirebaseGoogleLoginS3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseGoogleLoginS3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseGoogleLoginS3/Pods-FirebaseGoogleLoginS3.debug.xcconfig"; sourceTree = "<group>"; };
 		79452B0F1DBC1467003EEDC5 /* FirebaseGoogleLoginS3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseGoogleLoginS3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79452B121DBC1467003EEDC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79452B141DBC1467003EEDC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,11 @@
 		79452B231DBC1467003EEDC5 /* FirebaseGoogleLoginS3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseGoogleLoginS3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79452B271DBC1467003EEDC5 /* FirebaseGoogleLoginS3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseGoogleLoginS3Tests.swift; sourceTree = "<group>"; };
 		79452B291DBC1467003EEDC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79452B321DBC1544003EEDC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		82AE2C8479DBBF6F90957AEB /* Pods-FirebaseGoogleLoginS3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseGoogleLoginS3Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseGoogleLoginS3Tests/Pods-FirebaseGoogleLoginS3Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B69F4659EFF4251FE3A68FF0 /* Pods-FirebaseGoogleLoginS3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseGoogleLoginS3Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseGoogleLoginS3Tests/Pods-FirebaseGoogleLoginS3Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3E8BD3CB32DFD8168AA535C /* Pods-FirebaseGoogleLoginS3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseGoogleLoginS3.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseGoogleLoginS3/Pods-FirebaseGoogleLoginS3.release.xcconfig"; sourceTree = "<group>"; };
+		F0D9C60B9A95B32C1618DE87 /* Pods_FirebaseGoogleLoginS3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseGoogleLoginS3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BDC060F55E899A4385DAECE /* Pods_FirebaseGoogleLoginS3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +61,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5B2ADEF9555A2E9AB2F788 /* Pods_FirebaseGoogleLoginS3Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33D15CA1E7863890AE480A80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0D9C60B9A95B32C1618DE87 /* Pods_FirebaseGoogleLoginS3.framework */,
+				25A247851C93793B8D5D747E /* Pods_FirebaseGoogleLoginS3Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C73B509507191E72AD1BB74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				569AD441D665B73EDA32431E /* Pods-FirebaseGoogleLoginS3.debug.xcconfig */,
+				D3E8BD3CB32DFD8168AA535C /* Pods-FirebaseGoogleLoginS3.release.xcconfig */,
+				B69F4659EFF4251FE3A68FF0 /* Pods-FirebaseGoogleLoginS3Tests.debug.xcconfig */,
+				82AE2C8479DBBF6F90957AEB /* Pods-FirebaseGoogleLoginS3Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		79452B061DBC1467003EEDC5 = {
 			isa = PBXGroup;
 			children = (
 				79452B111DBC1467003EEDC5 /* FirebaseGoogleLoginS3 */,
 				79452B261DBC1467003EEDC5 /* FirebaseGoogleLoginS3Tests */,
 				79452B101DBC1467003EEDC5 /* Products */,
+				6C73B509507191E72AD1BB74 /* Pods */,
+				33D15CA1E7863890AE480A80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +117,7 @@
 				79452B191DBC1467003EEDC5 /* Assets.xcassets */,
 				79452B1B1DBC1467003EEDC5 /* LaunchScreen.storyboard */,
 				79452B1E1DBC1467003EEDC5 /* Info.plist */,
+				79452B321DBC1544003EEDC5 /* GoogleService-Info.plist */,
 			);
 			path = FirebaseGoogleLoginS3;
 			sourceTree = "<group>";
@@ -103,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79452B2C1DBC1467003EEDC5 /* Build configuration list for PBXNativeTarget "FirebaseGoogleLoginS3" */;
 			buildPhases = (
+				4E7F4FD6603271FB8EE5919A /* [CP] Check Pods Manifest.lock */,
 				79452B0B1DBC1467003EEDC5 /* Sources */,
 				79452B0C1DBC1467003EEDC5 /* Frameworks */,
 				79452B0D1DBC1467003EEDC5 /* Resources */,
+				E9FC3069ABEF3E81EDDAD56A /* [CP] Embed Pods Frameworks */,
+				BCA17D8DDC38576616C14EED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79452B2F1DBC1467003EEDC5 /* Build configuration list for PBXNativeTarget "FirebaseGoogleLoginS3Tests" */;
 			buildPhases = (
+				5EF997A7C6D6ECE9080A9FA5 /* [CP] Check Pods Manifest.lock */,
 				79452B1F1DBC1467003EEDC5 /* Sources */,
 				79452B201DBC1467003EEDC5 /* Frameworks */,
 				79452B211DBC1467003EEDC5 /* Resources */,
+				C5374314D7B12BBFA1D8AFF8 /* [CP] Embed Pods Frameworks */,
+				0F8EC4800626A785ABF3766D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79452B1D1DBC1467003EEDC5 /* LaunchScreen.storyboard in Resources */,
+				79452B331DBC1544003EEDC5 /* GoogleService-Info.plist in Resources */,
 				79452B1A1DBC1467003EEDC5 /* Assets.xcassets in Resources */,
 				79452B181DBC1467003EEDC5 /* Main.storyboard in Resources */,
 			);
@@ -195,6 +237,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F8EC4800626A785ABF3766D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseGoogleLoginS3Tests/Pods-FirebaseGoogleLoginS3Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E7F4FD6603271FB8EE5919A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EF997A7C6D6ECE9080A9FA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCA17D8DDC38576616C14EED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseGoogleLoginS3/Pods-FirebaseGoogleLoginS3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5374314D7B12BBFA1D8AFF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseGoogleLoginS3Tests/Pods-FirebaseGoogleLoginS3Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9FC3069ABEF3E81EDDAD56A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseGoogleLoginS3/Pods-FirebaseGoogleLoginS3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79452B0B1DBC1467003EEDC5 /* Sources */ = {
@@ -339,6 +474,7 @@
 		};
 		79452B2D1DBC1467003EEDC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 569AD441D665B73EDA32431E /* Pods-FirebaseGoogleLoginS3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QGUMN7L9G3;
@@ -352,6 +488,7 @@
 		};
 		79452B2E1DBC1467003EEDC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3E8BD3CB32DFD8168AA535C /* Pods-FirebaseGoogleLoginS3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QGUMN7L9G3;
@@ -365,6 +502,7 @@
 		};
 		79452B301DBC1467003EEDC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B69F4659EFF4251FE3A68FF0 /* Pods-FirebaseGoogleLoginS3Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -380,6 +518,7 @@
 		};
 		79452B311DBC1467003EEDC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82AE2C8479DBBF6F90957AEB /* Pods-FirebaseGoogleLoginS3Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +551,7 @@
 				79452B2E1DBC1467003EEDC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79452B2F1DBC1467003EEDC5 /* Build configuration list for PBXNativeTarget "FirebaseGoogleLoginS3Tests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +560,7 @@
 				79452B311DBC1467003EEDC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
