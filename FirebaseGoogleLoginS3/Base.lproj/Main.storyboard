@@ -1,14 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yhw-DF-DvS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="PwY-9V-Tbk">
+            <objects>
+                <viewController id="yhw-DF-DvS" customClass="LoginViewController" customModule="FirebaseGoogleLoginS3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Bq-zK-KA9"/>
+                        <viewControllerLayoutGuide type="bottom" id="iY6-on-zOV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vg2-Aq-JS1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Firebase Login App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2P-lx-gYQ">
+                                <frame key="frameInset" minX="71" minY="86" width="245" height="35"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login with Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFn-TH-wqi">
+                                <frame key="frameInset" minX="118" minY="187" width="138" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Arn-kE-QSh" customClass="GIDSignInButton">
+                                <frame key="frameInset" minX="67" minY="269" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Arn-kE-QSh" firstAttribute="top" secondItem="VFn-TH-wqi" secondAttribute="bottom" constant="61" id="4E4-FB-PKm"/>
+                            <constraint firstItem="Arn-kE-QSh" firstAttribute="centerX" secondItem="Vg2-Aq-JS1" secondAttribute="centerX" id="4L6-rU-cGd"/>
+                            <constraint firstItem="VFn-TH-wqi" firstAttribute="centerX" secondItem="Vg2-Aq-JS1" secondAttribute="centerX" id="KTN-Hj-Ejg"/>
+                            <constraint firstItem="E2P-lx-gYQ" firstAttribute="top" secondItem="2Bq-zK-KA9" secondAttribute="bottom" constant="66" id="Uvi-SV-7Xf"/>
+                            <constraint firstItem="VFn-TH-wqi" firstAttribute="top" secondItem="E2P-lx-gYQ" secondAttribute="bottom" constant="66" id="aaV-u0-sqg"/>
+                            <constraint firstItem="E2P-lx-gYQ" firstAttribute="centerX" secondItem="Vg2-Aq-JS1" secondAttribute="centerX" id="dlI-s2-T2O"/>
+                            <constraint firstItem="iY6-on-zOV" firstAttribute="top" secondItem="Arn-kE-QSh" secondAttribute="bottom" constant="270" id="tgi-qI-sDS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="googleLoginButtonOutlet" destination="Arn-kE-QSh" id="U9E-08-H58"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CB3-Sz-FVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-660" y="-546"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirebaseGoogleLoginS3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +65,23 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Successful" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOB-0L-SWN">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JOB-0L-SWN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FzJ-6O-kGM"/>
+                            <constraint firstItem="JOB-0L-SWN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hf5-NZ-tcD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="54" y="-546"/>
         </scene>
     </scenes>
 </document>
