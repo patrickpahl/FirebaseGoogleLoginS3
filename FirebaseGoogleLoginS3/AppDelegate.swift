@@ -12,7 +12,7 @@
 // Create obj-c 'm' file, then create bridging header file automatically (delete m file)
 // In the bridging header file, copy/paste from the firebase docs: #import <GoogleSignIn/GoogleSignIn.h>
 //* Go to Firebase console -> Authentication -> Enable google login -> Save
-
+//Segue: Drag from yellow dot on VC to the next VC
 
 import UIKit
 import Firebase
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     var window: UIWindow?
     
-    var databaseRef: FIRDatabaseReference?
+    //var databaseRef: FIRDatabaseReference?
     //Reference to Firebase database
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -43,59 +43,57 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             return
         }
         print("User signed into google")
+        self.window?.rootViewController?.performSegue(withIdentifier: "toLoginSuccessViewController", sender: nil)
         
-        let authentication = user.authentication
-        let credential = FIRGoogleAuthProvider.credential(withIDToken: (authentication?.idToken)!, accessToken: (authentication?.accessToken)!)
-        
-        FIRAuth.auth()?.signIn(with: credential) { (user, error) in
-            print("User signed into firebase")
-        
-        self.databaseRef = FIRDatabase.database().reference()
-        // Location of our firebase database
-        
-        //Check if users info is stored already or not:
-        self.databaseRef?.child("user_profiles").child(user.uid).observeSingleEvent(of: .value, with: { snapshot in
-            let snapshot = snapshot.value as? NSDictionary
-            
-            if snapshot == nil {
-                self.databaseRef?.child("user_profiles").child(user.uid).child("name").setValue(user.)
-            
+        ///Commented out code that adds users information to the database.
+//        let authentication = user.authentication
+//        guard let unwrappedUserAuth = user.authentication else { return }
+//        let credential = FIRGoogleAuthProvider.credential(withIDToken: unwrappedUserAuth.idToken, accessToken: unwrappedUserAuth.accessToken)
+//        FIRAuth.auth()?.signIn(with: credential) { user, error in
+//            print("User signed into firebase")
+//            self.databaseRef = FIRDatabase.database().reference()
+//             Location of our firebase database
+//            
+//            Check if users info is stored already or not:
+//            guard let unwrappedUserUid = user?.uid else { return }
+//            
+//            self.databaseRef?.child("user_profiles").child(unwrappedUserUid).observeSingleEvent(of: .value, with: { snapshot in
+//                let snapshot = snapshot.value as? NSDictionary
+//                if snapshot == nil {
+//                self.databaseRef?.child("user_profiles").child(unwrappedUserUid).child("name").setValue(user?.email)
+//                }
+//                    self.window?.rootViewController?.performSegue(withIdentifier: "toLoginSuccessViewController", sender: nil)
+//            })
             }
-        })
-    }
-        // 10-36
         
+        func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+        }
         
-    
-    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            print(error.localizedDescription)
-            return
+        //////
+        
+        func applicationWillResignActive(_ application: UIApplication) {
+            
+        }
+        
+        func applicationDidEnterBackground(_ application: UIApplication) {
+            
+        }
+        
+        func applicationWillEnterForeground(_ application: UIApplication) {
+            
+        }
+        
+        func applicationDidBecomeActive(_ application: UIApplication) {
+            
+        }
+        
+        func applicationWillTerminate(_ application: UIApplication) {
+            
         }
     }
     
-    //////
-    
-    func applicationWillResignActive(_ application: UIApplication) {
-        
-    }
-    
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        
-    }
-    
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        
-    }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        
-    }
-    
-    func applicationWillTerminate(_ application: UIApplication) {
-        
-    }
-    
-    
-}
 

@@ -48,6 +48,7 @@
                     </view>
                     <connections>
                         <outlet property="googleLoginButtonOutlet" destination="Arn-kE-QSh" id="U9E-08-H58"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toLoginSuccessViewController" id="p5f-YA-JdF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CB3-Sz-FVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
